@@ -13,8 +13,8 @@ public class Tests : HomePageO
     [Test]
     public void Test1()
     {
-        SendTextHomeField("Yada something Foo Bar");
-        Assert.That(GetTextHomeField(), Is.EqualTo("Yada something Foo Bar"));
+        SendTextSearchBar("Yada something Foo Bar");
+        Assert.That(GetTextSearchBar(), Is.EqualTo("Yada something Foo Bar"));
     }
 
     [TearDown]
