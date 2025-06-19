@@ -13,6 +13,7 @@ public class HomePageO : FieldsO
     
     public void SendTextSearchBar(string text)
     { SendTextField(HomeSearchBarXpath, text); }
+    
     public void ClearSearchBar()
     { ClearField(HomeSearchBarXpath); }
 
