@@ -101,3 +101,4 @@ C:\Repos\MyTestFrameWork\obj\Debug\net9.0\refint\MyTestFrameWork.dll
 C:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.pdb
 C:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.genruntimeconfig.cache
 C:\Repos\MyTestFrameWork\obj\Debug\net9.0\ref\MyTestFrameWork.dll
+C:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.sourcelink.json

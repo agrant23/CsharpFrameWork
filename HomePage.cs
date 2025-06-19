@@ -1,26 +1,20 @@
-using Driver;
 using Elements;
 
 namespace HomePage;
 
-                        //Had DriverO inherited below and instantited Fields from element, this opened multiple browsers.
 public class HomePageO : FieldsO
 {
-    //static FieldsO field = new FieldsO();
     public void OpenHomePage()
     {
         OpenPage("https://google.com");
     }
 
-    public void SendTextHomeField() //string text)
-    {
-        string HomeFieldXpath = "//*[@id='APjFqb']";
-        SendTextField(HomeFieldXpath, "Yada Foo Bar");
-    }
+    static string HomeFieldXpath = "//*[@id='APjFqb']";
+    public void SendTextHomeField(string text)
+    {   SendTextField(HomeFieldXpath, text); }
     public void ClearHomeField()
-    {
-        string HomeFieldXpath = "//*[@id='APjFqb']";
-        ClearField(HomeFieldXpath);
-    }
+    { ClearField(HomeFieldXpath); }
 
+    public string GetTextHomeField()
+    { return GetText(HomeFieldXpath); }
 }
