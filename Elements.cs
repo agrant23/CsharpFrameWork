@@ -13,7 +13,6 @@ public class FieldsO : DriverO
     {
         IWebElement fieldElement = Driver.FindElement(By.XPath(Xpath));
         fieldElement.SendKeys(text);
-        Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
     }
     public void ClearField(string Xpath)
     {

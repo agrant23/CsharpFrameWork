@@ -10,8 +10,9 @@ public class HomePageO : FieldsO
     }
 
     static string HomeSearchBarXpath = "//*[@id='APjFqb']";
+    
     public void SendTextSearchBar(string text)
-    {   SendTextField(HomeSearchBarXpath, text); }
+    { SendTextField(HomeSearchBarXpath, text); }
     public void ClearSearchBar()
     { ClearField(HomeSearchBarXpath); }
 
