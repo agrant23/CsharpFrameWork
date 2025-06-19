@@ -20,9 +20,9 @@ public class FieldsO : DriverO
         IWebElement fieldElement = Driver.FindElement(By.XPath(Xpath));
         fieldElement.Clear();
     }
-    public string GetText(string Xpath)
+    public string? GetTextInputBox(string Xpath)
     {
         IWebElement fieldElement = Driver.FindElement(By.XPath(Xpath));
-        return fieldElement.Text;
+        return fieldElement.GetAttribute("value");
     }
 }

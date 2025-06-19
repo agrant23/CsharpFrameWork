@@ -16,5 +16,5 @@ public class HomePageO : FieldsO
     { ClearField(HomeFieldXpath); }
 
     public string GetTextHomeField()
-    { return GetText(HomeFieldXpath); }
+    { return GetTextInputBox(HomeFieldXpath); }
 }
