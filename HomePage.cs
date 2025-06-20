@@ -9,14 +9,15 @@ public class HomePageO : FieldsO
         OpenPage("https://google.com");
     }
 
-    static string HomeSearchBarXpath = "//*[@id='APjFqb']";
-    
-    public void SendTextSearchBar(string text)
-    { SendTextField(HomeSearchBarXpath, text); }
-    
-    public void ClearSearchBar()
-    { ClearField(HomeSearchBarXpath); }
+    static string HomeFieldXpath = "//*[@id='APjFqb']";
 
-    public string GetTextSearchBar()
-    { return GetTextInputBox(HomeSearchBarXpath); }
+    public void SendTextSearchBar(string text)
+    { SendTextField(HomeFieldXpath, text); }
+
+    public void ClearHomeField()
+    { ClearField(HomeFieldXpath); }
+
+    public string? GetTextSearchBar()
+    { return GetTextInputBox(HomeFieldXpath); }
+
 }
