@@ -31,7 +31,7 @@ To run this repository, you need to:
         dotnet test
 
 
-I created this framework from scratch. Some more changes/additions to come:
+I created this framework from scratch. Some changes/additions to come:
 
     I am exploring implementing the xUnit Framework instead of NUnit.
     Cross Browser testing
