@@ -21,15 +21,18 @@ To run this repository, you need to:
         In the near future I will update this repository so this step is not necessary.
 5. With your Operating System's command console navigate to the directory where the 
     MyTestFrameWork.csproj lives and enter the commands:
+
         dotnet new nunit
         dotnet add package selenium.webdriver
 6. Open the Repository in VS Code and check for errors. If there are no errors then run the
      commands.
+
         dotnet build
         dotnet test
 
 
-I created this framework from scratch. Some more changes/additions to come: 
+I created this framework from scratch. Some more changes/additions to come:
+
     I am exploring implementing the xUnit Framework instead of NUnit.
     Cross Browser testing
     Cross Platform testing
