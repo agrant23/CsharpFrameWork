@@ -9,11 +9,11 @@ public class FieldsO : DriverO
 {
     public void OpenPage(string pageURL, string pageTitle)
     {
+        Driver.Navigate().GoToUrl(pageURL);
         WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
         wait.Until(ExpectedConditions.TitleIs(pageTitle));
-        Driver.Navigate().GoToUrl(pageURL);
     }
-    
+
     public void SendTextField(string Xpath, string text)
     {
         IWebElement fieldElement = Driver.FindElement(By.XPath(Xpath));
