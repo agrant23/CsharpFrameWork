@@ -1,16 +1,21 @@
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
 using Driver;
 
 namespace Elements;
 
+public class Navigate : DriverO
+{
+    public void OpenPage(string pageURL, string pageTitle)
+    {
+        Driver.Navigate().GoToUrl(pageURL);
+        WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
+        wait.Until(ExpectedConditions.TitleIs(pageTitle));
+    }
+}
 public class FieldsO : DriverO
 {
-    public void OpenPage(string PageURL)
-    {
-        //wait.Until(ExpectedConditions.TitleIs("Your Expected Title"));
-        Driver.Navigate().GoToUrl(PageURL);
-    }
-
     public void SendTextField(string Xpath, string text)
     {
         IWebElement fieldElement = Driver.FindElement(By.XPath(Xpath));

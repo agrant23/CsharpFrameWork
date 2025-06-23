@@ -4,9 +4,10 @@ namespace HomePage;
 
 public class HomePageO : FieldsO
 {
+    Navigate navigate = new Navigate();
     public void OpenHomePage()
     {
-        OpenPage("https://google.com");
+        navigate.OpenPage("https://google.com", "Google");
     }
 
     static string HomeFieldXpath = "//*[@id='APjFqb']";
