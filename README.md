@@ -10,6 +10,7 @@ To run this repository, you need to:
 2. Pull this repository onto your PC from the remote URL 
     https://github.com/agrant23/CsharpFrameWork using
         GIT Bash or GIT Desktop. For GIT Bash:
+
         git remote add origin https://github.com/agrant23/CsharpFrameWork
         git branch --set-upstream-to=origin/main
         git pull origin main
@@ -20,15 +21,19 @@ To run this repository, you need to:
         In the near future I will update this repository so this step is not necessary.
 4. With your Operating System's command console navigate to the directory where the 
     MyTestFrameWork.csproj lives and enter the commands:
+
         dotnet new nunit
         dotnet add package selenium.webdriver
+        dotnet add package SeleniumExtras.WaitHelpers
 5. Open the Repository in VS Code and check for errors. If there are no errors then run the
-     commands.
+     commands:
+
         dotnet build
         dotnet test
 
 
-I created this framework from scratch. Some more changes/additions to come: 
+I created this framework from scratch. Some more changes/additions to come:
+
     I am exploring implementing the xUnit Framework instead of NUnit.
     Cross Browser testing
     Cross Platform testing

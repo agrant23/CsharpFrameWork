@@ -5,7 +5,7 @@ using Driver;
 
 namespace Elements;
 
-public class NavigateO
+public class NavigateO : DriverO
 {
     IWebDriver _driver;
 
@@ -13,7 +13,6 @@ public class NavigateO
     {
         this._driver = driver;
     }
-
     public void OpenPage(string pageURL, string pageTitle)
     {
         _driver.Navigate().GoToUrl(pageURL);
