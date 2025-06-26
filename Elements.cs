@@ -5,40 +5,46 @@ using Driver;
 
 namespace Elements;
 
-public class Navigate : DriverO
+public class NavigateO
 {
-    // public void OpenPage(string pageURL, string pageTitle)
-    // {
-    //     Driver.Navigate().GoToUrl(pageURL);
-    //     WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
-    //     wait.Until(ExpectedConditions.TitleIs(pageTitle));
-    // }
-}
-public class FieldsO : DriverO
-{
+    IWebDriver _driver;
+
+    public NavigateO(IWebDriver driver)
+    {
+        this._driver = driver;
+    }
+
     public void OpenPage(string pageURL, string pageTitle)
     {
-        Driver.Navigate().GoToUrl(pageURL);
-        WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
+        _driver.Navigate().GoToUrl(pageURL);
+        WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
         wait.Until(ExpectedConditions.TitleIs(pageTitle));
     }
+}
+public class FieldsO
+{
+    IWebDriver _driver;
+
+    public FieldsO(IWebDriver driver)
+    {
+        this._driver = driver;
+    }
+
     public void SendTextField(string Xpath, string text)
     {
-        IWebElement fieldElement = Driver.FindElement(By.XPath(Xpath));
+        IWebElement fieldElement = _driver.FindElement(By.XPath(Xpath));
         fieldElement.SendKeys(text);
     }
 
     public void ClearField(string Xpath)
     {
-        IWebElement fieldElement = Driver.FindElement(By.XPath(Xpath));
+        IWebElement fieldElement = _driver.FindElement(By.XPath(Xpath));
         fieldElement.Clear();
     }
 
     public string? GetTextInputBox(string Xpath)
     {
-        IWebElement fieldElement = Driver.FindElement(By.XPath(Xpath));
+        IWebElement fieldElement = _driver.FindElement(By.XPath(Xpath));
         return fieldElement.GetAttribute("value");
-        //for an Input box to get the "text" entered use the above not below
-        //fieldElement.Text gets preexisting text from the UI
     }
 }
