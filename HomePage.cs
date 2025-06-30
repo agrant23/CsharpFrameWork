@@ -1,5 +1,4 @@
 using Elements;
-//using Driver;
 using OpenQA.Selenium;
 
 namespace HomePage;
@@ -7,8 +6,8 @@ namespace HomePage;
 public class HomePageO
 {
     IWebDriver? _driver;
-    NavigateO _navigate; // = new NavigateO(_driver);
-    FieldsO _fields; // = new FieldsO(_driver);
+    NavigateO _navigate;
+    FieldsO _fields;
 
     public HomePageO(NavigateO navigate, FieldsO fields, IWebDriver driver)
     {
