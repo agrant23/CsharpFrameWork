@@ -1,9 +1,6 @@
-c:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.csproj.AssemblyReference.cache
-c:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.GeneratedMSBuildEditorConfig.editorconfig
-c:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.AssemblyInfoInputs.cache
-c:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.AssemblyInfo.cs
-c:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.csproj.CoreCompileInputs.cache
-c:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.sourcelink.json
+<<<<<<< HEAD
+=======
+>>>>>>> 5b6896da5c172cf6f7917059739ea47a697edf09
 C:\Repos\MyTestFrameWork\bin\Debug\net9.0\testhost.dll
 C:\Repos\MyTestFrameWork\bin\Debug\net9.0\testhost.exe
 C:\Repos\MyTestFrameWork\bin\Debug\net9.0\selenium-manager\linux\selenium-manager
@@ -19,6 +16,8 @@ C:\Repos\MyTestFrameWork\bin\Debug\net9.0\MyTestFrameWork.deps.json
 C:\Repos\MyTestFrameWork\bin\Debug\net9.0\MyTestFrameWork.runtimeconfig.json
 C:\Repos\MyTestFrameWork\bin\Debug\net9.0\MyTestFrameWork.dll
 C:\Repos\MyTestFrameWork\bin\Debug\net9.0\MyTestFrameWork.pdb
+C:\Repos\MyTestFrameWork\bin\Debug\net9.0\SeleniumExtras.PageObjects.dll
+C:\Repos\MyTestFrameWork\bin\Debug\net9.0\SeleniumExtras.WaitHelpers.dll
 C:\Repos\MyTestFrameWork\bin\Debug\net9.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Repos\MyTestFrameWork\bin\Debug\net9.0\Microsoft.TestPlatform.CoreUtilities.dll
 C:\Repos\MyTestFrameWork\bin\Debug\net9.0\Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -96,14 +95,15 @@ C:\Repos\MyTestFrameWork\bin\Debug\net9.0\zh-Hans\Microsoft.VisualStudio.TestPla
 C:\Repos\MyTestFrameWork\bin\Debug\net9.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Repos\MyTestFrameWork\bin\Debug\net9.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Repos\MyTestFrameWork\bin\Debug\net9.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.csproj.AssemblyReference.cache
+C:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.AssemblyInfoInputs.cache
+C:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.AssemblyInfo.cs
+C:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.csproj.CoreCompileInputs.cache
+C:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.sourcelink.json
 C:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFr.0E51EEA8.Up2Date
 C:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.dll
 C:\Repos\MyTestFrameWork\obj\Debug\net9.0\refint\MyTestFrameWork.dll
 C:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.pdb
 C:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.genruntimeconfig.cache
 C:\Repos\MyTestFrameWork\obj\Debug\net9.0\ref\MyTestFrameWork.dll
-<<<<<<< HEAD
-C:\Repos\MyTestFrameWork\bin\Debug\net9.0\SeleniumExtras.PageObjects.dll
-=======
->>>>>>> 5b6896da5c172cf6f7917059739ea47a697edf09
-C:\Repos\MyTestFrameWork\bin\Debug\net9.0\SeleniumExtras.WaitHelpers.dll
