@@ -3,9 +3,11 @@ using OpenQA.Selenium.Chrome;
 
 namespace Driver;
 
-    public abstract class DriverO
+public class DriverO
+{
+    public IWebDriver StartDriver()
     {
-    internal IWebDriver Driver = new ChromeDriver("C:\\Repos\\MyTestFrameWork\\driver\\chromedriver-win32");
+        IWebDriver driver = new ChromeDriver("C:\\Repos\\MyTestFrameWork\\driver\\chromedriver-win32");
+        return driver;
     }
-
-//DriverO driver = new DriverO();
+}

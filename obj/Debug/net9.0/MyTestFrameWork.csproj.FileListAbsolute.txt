@@ -102,4 +102,8 @@ C:\Repos\MyTestFrameWork\obj\Debug\net9.0\refint\MyTestFrameWork.dll
 C:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.pdb
 C:\Repos\MyTestFrameWork\obj\Debug\net9.0\MyTestFrameWork.genruntimeconfig.cache
 C:\Repos\MyTestFrameWork\obj\Debug\net9.0\ref\MyTestFrameWork.dll
+<<<<<<< HEAD
+C:\Repos\MyTestFrameWork\bin\Debug\net9.0\SeleniumExtras.PageObjects.dll
+=======
+>>>>>>> 5b6896da5c172cf6f7917059739ea47a697edf09
 C:\Repos\MyTestFrameWork\bin\Debug\net9.0\SeleniumExtras.WaitHelpers.dll
