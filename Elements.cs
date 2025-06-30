@@ -5,7 +5,7 @@ using Driver;
 
 namespace Elements;
 
-public class NavigateO : DriverO
+public class NavigateO
 {
     IWebDriver _driver;
 
