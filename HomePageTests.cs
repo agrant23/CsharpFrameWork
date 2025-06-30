@@ -8,9 +8,9 @@ namespace HomePageTests;
 public class Tests : IDisposable
 {
     static DriverO driverO = new DriverO();
-    private static readonly IWebDriver _driver = driverO.StartDriver();
-    static NavigateO? navigate = new NavigateO(_driver);
-    static FieldsO? fields = new FieldsO(_driver);
+    static IWebDriver _driver = driverO.StartDriver();
+    static NavigateO navigate = new NavigateO(_driver);
+    static FieldsO fields = new FieldsO(_driver);
     public required HomePageO homePage = new HomePageO(navigate, fields, _driver);
 
     [OneTimeSetUp]
@@ -23,8 +23,8 @@ public class Tests : IDisposable
     public void Test1()
     {
         homePage.ClearHomeField();
-        homePage.SendTextSearchBar("Yada something Foo Bar");
-        Assert.That(homePage.GetTextSearchBar(), Is.EqualTo("Yada something Foo Bar"));
+        homePage.SendStringSearchBar("Yada something Foo Bar");
+        Assert.That(homePage.GetStringSearchBar(), Is.EqualTo("Yada something Foo Bar"));
     }
 
     [OneTimeTearDown]

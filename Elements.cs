@@ -1,7 +1,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
-using Driver;
 
 namespace Elements;
 
@@ -29,7 +28,7 @@ public class FieldsO
         this._driver = driver;
     }
 
-    public void SendTextField(string Xpath, string text)
+    public void SendStringField(string Xpath, string text)
     {
         IWebElement fieldElement = _driver.FindElement(By.XPath(Xpath));
         fieldElement.SendKeys(text);
@@ -41,7 +40,7 @@ public class FieldsO
         fieldElement.Clear();
     }
 
-    public string? GetTextInputBox(string Xpath)
+    public string? GetStringInputBox(string Xpath)
     {
         IWebElement fieldElement = _driver.FindElement(By.XPath(Xpath));
         return fieldElement.GetAttribute("value");

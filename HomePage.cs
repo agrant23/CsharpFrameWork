@@ -5,9 +5,9 @@ namespace HomePage;
 
 public class HomePageO
 {
-    private IWebDriver? _driver;
-    NavigateO _navigate;
-    FieldsO _fields;
+    private readonly IWebDriver _driver;
+    readonly NavigateO _navigate;
+    readonly FieldsO _fields;
 
     public HomePageO(NavigateO navigate, FieldsO fields, IWebDriver driver)
     {
@@ -23,12 +23,12 @@ public class HomePageO
 
     static string HomeFieldXpath = "//*[@id='APjFqb']";
     
-    public void SendTextSearchBar(string text)
-    { _fields.SendTextField(HomeFieldXpath, text); }
+    public void SendStringSearchBar(string text)
+    { _fields.SendStringField(HomeFieldXpath, text); }
     
     public void ClearHomeField()
     { _fields.ClearField(HomeFieldXpath); }
 
-    public string? GetTextSearchBar()
-    { return _fields.GetTextInputBox(HomeFieldXpath); }
+    public string? GetStringSearchBar()
+    { return _fields.GetStringInputBox(HomeFieldXpath); }
 }
