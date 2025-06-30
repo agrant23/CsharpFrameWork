@@ -5,7 +5,7 @@ namespace HomePage;
 
 public class HomePageO
 {
-    IWebDriver? _driver;
+    private IWebDriver? _driver;
     NavigateO _navigate;
     FieldsO _fields;
 

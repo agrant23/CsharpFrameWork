@@ -24,7 +24,6 @@ public class Tests : IDisposable
     {
         homePage.ClearHomeField();
         homePage.SendTextSearchBar("Yada something Foo Bar");
-        Thread.Sleep(6000);
         Assert.That(homePage.GetTextSearchBar(), Is.EqualTo("Yada something Foo Bar"));
     }
 
