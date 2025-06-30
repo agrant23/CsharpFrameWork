@@ -5,12 +5,13 @@ namespace HomePage;
 
 public class HomePageO
 {
-    readonly static IWebDriver? _driver;
-    NavigateO _navigate = new NavigateO(_driver);
-    FieldsO _fields = new FieldsO(_driver);
+    IWebDriver? _driver;
+    NavigateO _navigate;
+    FieldsO _fields;
 
-    public HomePageO(NavigateO navigate, FieldsO fields)
+    public HomePageO(NavigateO navigate, FieldsO fields, IWebDriver driver)
     {
+        this._driver = driver;
         this._navigate = navigate;
         this._fields = fields;
     }

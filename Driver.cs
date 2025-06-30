@@ -7,7 +7,6 @@ public class DriverO
 {
     public IWebDriver StartDriver()
     {
-        IWebDriver driver = new ChromeDriver("C:\\Repos\\MyTestFrameWork\\driver\\chromedriver-win32");
-        return driver;
+        return new ChromeDriver("C:\\Repos\\MyTestFrameWork\\driver\\chromedriver-win32");
     }
 }
