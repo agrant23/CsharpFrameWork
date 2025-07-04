@@ -4,11 +4,11 @@ using SeleniumExtras.WaitHelpers;
 
 namespace Elements;
 
-public class NavigateO
+public class NavigateC
 {
     IWebDriver _driver;
 
-    public NavigateO(IWebDriver driver)
+    public NavigateC(IWebDriver driver)
     {
         this._driver = driver;
     }
@@ -19,11 +19,11 @@ public class NavigateO
         wait.Until(ExpectedConditions.TitleIs(pageTitle));
     }
 }
-public class FieldsO
+public class FieldsC
 {
     IWebDriver _driver;
 
-    public FieldsO(IWebDriver driver)
+    public FieldsC(IWebDriver driver)
     {
         this._driver = driver;
     }

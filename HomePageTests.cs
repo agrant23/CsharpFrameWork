@@ -7,11 +7,11 @@ namespace HomePageTests;
 
 public class Tests : IDisposable
 {
-    static DriverO driverO = new DriverO();
+    static DriverC driverO = new DriverC();
     static IWebDriver _driver = driverO.StartDriver();
-    static NavigateO navigate = new NavigateO(_driver);
-    static FieldsO fields = new FieldsO(_driver);
-    public required HomePageO homePage = new HomePageO(navigate, fields, _driver);
+    static NavigateC navigate = new NavigateC(_driver);
+    static FieldsC fields = new FieldsC(_driver);
+    public required HomePageC homePage = new HomePageC(navigate, fields, _driver);
 
     [OneTimeSetUp]
     public void Setup()

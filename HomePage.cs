@@ -3,13 +3,13 @@ using OpenQA.Selenium;
 
 namespace HomePage;
 
-public class HomePageO
+public class HomePageC
 {
     private readonly IWebDriver _driver;
-    readonly NavigateO _navigate;
-    readonly FieldsO _fields;
+    readonly NavigateC _navigate;
+    readonly FieldsC _fields;
 
-    public HomePageO(NavigateO navigate, FieldsO fields, IWebDriver driver)
+    public HomePageC(NavigateC navigate, FieldsC fields, IWebDriver driver)
     {
         this._driver = driver;
         this._navigate = navigate;
