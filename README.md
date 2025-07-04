@@ -9,8 +9,7 @@ To run this repository, you need to:
     you can use the C# Dev Kit. If that is problematic you can download the .NET Framework and SDK yourself from the site
     https://dotnet.microsoft.com/en-us/download/dotnet/9.0 and set up the path for these if needed. 
     The .NET version used for this repository is 9.0.200
-2.  Create a folder in a stable folder in your PC titled "MyTestFremWork". With your Operating System's command console navigate to this
-    directory and enter the the commands:
+2.  Create a folder in a stable folder in your PC titled "MyTestFremWork". With your Operating System's command console navigate to this directory and enter the the commands:
 
         dotnet new nunit
         dotnet add package selenium.webdriver

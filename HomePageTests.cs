@@ -23,8 +23,8 @@ public class Tests : IDisposable
     public void Test1()
     {
         homePage.ClearHomeField();
-        homePage.SendStringSearchBar("Yada something Foo Bar");
-        Assert.That(homePage.GetStringSearchBar(), Is.EqualTo("Yada something Foo Bar"));
+        homePage.SendStringSearchBar("Yada something Foo Bar 45!");
+        Assert.That(homePage.GetStringSearchBar(), Is.EqualTo("Yada something Foo Bar 45!"));
     }
 
     [OneTimeTearDown]
